@@ -4,7 +4,7 @@
   width: 100%;
   background-color: #f9f9fa;
   padding: 18px 50px;
-  box-sizing: border-box;
+  box-sizing: border-box; /* padding을 줌으로 인해, 박스 사이즈가 작아져도 괜찮다는 라인! */
   border-top: 1px solid #eaeaea;
 }
 
