@@ -1,13 +1,19 @@
 #friends-display-link {
   text-align: center;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #515151;
   background-color: #fafafa;
   padding: 15px 0px;
+  margin-bottom: 10px;
 }
 
 #friends-display-link i {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+  /* header와 같은 px만큼 들어감~ */
 }
