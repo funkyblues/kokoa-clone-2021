@@ -1,6 +1,11 @@
 .screen-header {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  width: 100%;
+  padding: 20px 0px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  background-color: white;
+  top: 26px;
   padding-left: 10px;
   display: flex;
   justify-content: space-between;
@@ -15,4 +20,20 @@
 
 .screen-header__icons span {
   margin-left: var(--horizontal-space);
+}
+
+.screen-header__notification {
+  position: relative;
+}
+
+.screen-header__update-notification {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 18px;
+  top: -2px;
 }

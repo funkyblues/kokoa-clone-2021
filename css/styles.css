@@ -20,3 +20,7 @@ body {
   height: 1000vh;
   color: #2f363e;
 }
+
+.screen-space {
+  padding-bottom: var(--screen-padding-bottom);
+}
