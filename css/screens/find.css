@@ -1,7 +1,6 @@
 .find-icons {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .find-icons__icon {
@@ -12,8 +11,37 @@
 
 .find-icons__icon i {
   font-size: 35px;
+  margin-bottom: 18px;
 }
 
 .find-icons__icon span {
-  margin-top: 18px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.recommended-friends {
+  margin: 25px 0px;
+  padding: 25px 0px;
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+
+.recommended-friends__title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #a4a4a4;
+}
+
+.recommended-friends span {
+  display: block; /*span 은 inline이므로, block으로 해주어야 함 ㅎㅎ*/
+  margin-top: 105px;
+  margin-bottom: 110px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  color: #a2a2a2;
 }
