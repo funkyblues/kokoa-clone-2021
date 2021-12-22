@@ -17,6 +17,10 @@
 }
 
 .alt-header__column:last-child {
-  font-size: 13px;
+  font-size: 20px;
   margin-left: auto;
+}
+
+.alt-header__column span:last-child {
+  margin-left: 20px;
 }
