@@ -129,20 +129,21 @@
 .reply__column:last-child > i,
 .reply__column:last-child button {
   position: absolute;
-  right: -3.5px;
-  top: 2px;
+  right: -20px;
+  top: 1px;
 }
 
 .reply__column:last-child > i {
-  right: 40px;
-  top: 8px;
+  right: 28px;
+  font-size: 30px;
+  top: 10px;
 }
 
 .reply__column button {
   background-color: var(--yellow);
   border: none;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
