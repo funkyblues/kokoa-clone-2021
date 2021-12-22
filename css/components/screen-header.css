@@ -1,6 +1,8 @@
 .screen-header {
+  z-index: 20;
   width: 100%;
   padding-top: 20px;
+  padding-bottom: 10px;
   padding-right: 20px;
   box-sizing: border-box;
   position: fixed;
