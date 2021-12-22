@@ -23,7 +23,7 @@
 /* style.css 파일에는 font-family와 같이 모든 스크린에 적용될 수 있는 스타일을 쓰는 게 좋다 (또는 배경색)*/
 body {
   font-family: "Open Sans", sans-serif;
-  height: 1000vh;
+  height: 100vh;
   color: #2f363e;
 }
 
