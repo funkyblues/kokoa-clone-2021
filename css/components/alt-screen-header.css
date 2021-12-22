@@ -1,5 +1,11 @@
 .alt-header {
+  z-index: 1;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
   padding-top: 38px;
+  padding-bottom: 10px;
   padding-left: var(--horizontal-space);
   padding-right: var(--horizontal-space);
   display: flex;
