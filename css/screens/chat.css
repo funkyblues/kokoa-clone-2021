@@ -42,6 +42,7 @@
   height: 50px;
   border-radius: 30%;
   margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 .message__info {
@@ -60,8 +61,8 @@
 .message__bubble {
   background-color: white;
   font-size: 18px;
-  padding: 8px;
-  margin-right: 5px;
+  padding: 10px;
+  margin-right: 7px;
   font-weight: 600;
   border-radius: 10px;
   border-top-left-radius: 0px;
@@ -71,4 +72,23 @@
   opacity: 0.8;
   font-size: 13px;
   font-weight: 600;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 10px;
+  margin-left: 7px;
+}
+
+/* .message-row--own .message__time {
+  order: 0; /*아건 flex children 에게만 적용된다~~
+} 
+*/
+.message-row--own .message__info {
+  flex-direction: row-reverse; /*앞의 message-row--own 클래스를 기준으로 row-reverse!*/
 }
