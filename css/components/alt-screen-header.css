@@ -7,6 +7,15 @@
   justify-content: center;
 }
 
+/*가운데 정렬을 위한 약간의 hack
+모든 열을 같은 너비로 만들고
+마지막 열은 flex 후 flex-end,
+가운데 열 중앙 정렬*/
+
+.alt-header__column {
+  width: 33%;
+}
+
 .alt-header__title {
   font-size: 24px;
   font-weight: 600;
@@ -16,9 +25,15 @@
   margin-right: auto;
 }
 
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
 .alt-header__column:last-child {
   font-size: 20px;
   margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .alt-header__column span:last-child {

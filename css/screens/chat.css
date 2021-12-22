@@ -5,3 +5,20 @@
 .chat-status-bar {
   background-color: #abc1d1;
 }
+
+#chat-screen .alt-header {
+  background-color: #abc1d1;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+.main-chat {
+  padding-top: 100px;
+  text-align: center;
+  color: #c5cfd6;
+  background-color: #92a4b2;
+}
