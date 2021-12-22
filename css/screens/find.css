@@ -74,6 +74,7 @@
 .open-post__members {
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 
 .open-post__members img {
