@@ -1,0 +1,20 @@
+.settings__setting {
+  padding: 20px var(--horizontal-space);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.settings__setting i {
+  display: flex;
+  align-items: center;
+  opacity: 0.95;
+  margin-right: 24px;
+  font-size: 22px;
+}
+
+.settings__setting:first-child i {
+  margin-right: 18px;
+}
