@@ -1,5 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
+  height: 500vh;
 }
 
 .chat-status-bar {
@@ -13,14 +14,26 @@
   box-sizing: border-box;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-screen {
   padding: 0px var(--horizontal-space);
 }
 .main-chat {
-  padding-top: 100px;
+  padding-top: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.7s linear;
 }
 
 .chat__timestamp {
@@ -43,6 +56,19 @@
   border-radius: 30%;
   margin-right: 10px;
   margin-bottom: 20px;
+  animation: faceAnimation 3s ease-in-out infinite;
+}
+
+@keyframes faceAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 .message__info {
@@ -103,6 +129,7 @@
   justify-content: space-between;
   padding: 6px 25px;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -124,6 +151,7 @@
   width: 100%;
   border: var(--main-border);
   border-radius: 20px;
+  transition: all .3s ease-in-out;
 }
 
 .reply__column:last-child > i,
@@ -154,4 +182,31 @@
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
+}
+
+/*.reply input과 같은 시간에 움직여야 함~ (권장) transition*/
+
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/*focus-within : reply 안 쪽의 element가 focus 인지~*/
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+
+.reply:focus-within input {
+  width: 88vw;
+  transform: translateX(-13%) translateY(-80px);
+}
+
+/*부드럽게 퇴장등장을 위해 .reply에 transition: all 0.3s ease-in-out 을 넣음!*/
+
+.reply:focus-within {
+  transform: translateY(80px);
 }
