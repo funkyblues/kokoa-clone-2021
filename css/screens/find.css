@@ -104,3 +104,23 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color:tomato;
+    transform: scale(3);
+  }
+  100% {
+    color:white;
+    transform:none;
+  }
+}
+
+.open-post__heart-count:hover i{
+  will-change: transform; /*브라우저를 돕는 역할. transform이 확실히 변화할 것이라는 뜻. 글카를 가속하도록 준비해라.. 뭐 이런.*/
+  animation: heartBeat 1s linear infinite;
+}
